@@ -1,0 +1,448 @@
+:root {
+  --primary: #031a2d;
+  --secondary: #2268a4;
+  --third: rgb(7, 58, 103);
+  --background: #e6eaed;
+  --surface: #b0b7ba;
+}
+
+
+body {
+  font-family: Bahnschrift, 'DIN Alternate', 'Franklin Gothic Medium', 'Nimbus Sans Narrow', sans-serif-condensed, sans-serif;
+  font-weight: normal;
+  background-color: var(--background);
+  color: #222;
+  margin: 0;
+
+
+  h1 {
+    font-size:x-large;
+    color: white;
+  }
+
+
+  h2, h3 {
+    margin: 5px;
+    align-items: center;
+    color: black;
+    text-decoration: underline;
+    text-decoration-color: var(--primary);
+
+  }
+
+
+  h2{
+    font-size: 2rem;
+  }
+
+  h3 {
+    font-size: 1.5rem;
+  }
+
+
+  p {
+    color: black;
+  }
+
+
+}
+
+
+
+
+header {
+  position: fixed;
+  display: flex;
+  background-color: var(--primary);
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem 1rem 0.5rem;
+  width: 100%;
+  gap: 0.5rem;
+  box-sizing: border-box;
+}
+
+
+.header-buttons, .header-links{
+  color: white;
+  gap: 20px;
+  display: flex;
+  align-items: center;
+  
+}
+
+
+
+
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content:space-evenly;
+  gap: 1rem;
+  padding: 7rem 4rem;
+}
+
+  img {
+    border-radius: 10px;
+
+  }
+
+
+ section {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    gap: 10px;
+
+    div {
+      display: flex;
+      flex-direction: row;
+    }
+
+}
+
+
+hr {
+    border: none;       /* Remove a borda padrão */
+    height: 1px;        /* Define a espessura da linha */
+    background-color: var(--surface); /* Define a cor da linha (mude para a cor que desejar) */
+    margin-left: auto;
+    margin-right: auto;
+    
+    /* Espaçamento vertical (opcional) */
+    margin-top: 40px;
+    margin-bottom: 40px;  
+    width: 70%;
+}
+
+
+.resumo div > article {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  justify-content: space-evenly;
+  
+
+  margin: 0px 20px;
+  padding: 10px 20px;
+
+
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+  border-radius: 20px;
+  background-color: white;
+}
+
+
+.projetos div {
+
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap:20px;
+
+
+
+  > article {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    justify-content: space-evenly;
+
+    gap:20px;
+    padding: 20px 20px;
+
+
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    border-radius: 20px;
+    background-color: white;
+  }
+
+}
+
+
+.profissional{
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  
+
+  > article {
+    display: flex;
+    flex-direction: column;
+    
+     .profissional-texto {
+
+      display: flex;
+      gap: 1rem;
+      
+      img {
+        flex: 2;
+        height: auto;
+        min-width: 0;
+        object-fit: contain;
+      }
+
+      p {
+        flex: 9;
+      }
+    }
+
+      .profissional-titulo {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+
+        p{
+          background-color: var(--primary);
+          border-radius: 20PX;
+          color: white;
+          padding: 0.7rem;
+
+        }
+
+
+      }
+
+
+    
+
+  }
+} 
+
+.academico{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  
+  
+  gap: 0;
+  margin: 7rem -4rem;
+
+  .bloco-1, .bloco-2{
+    display: grid;
+    
+    grid-template-rows: subgrid;
+    box-shadow: 10px 10px 10px rgba(0,0,0,0.2);
+    padding: 2rem 5rem 3rem;
+
+
+  > h2{
+    font-size: 2rem;
+    color: white;
+    text-decoration: underline;
+    text-decoration-color: var(--secondary);
+  }
+
+
+
+    div{
+    padding-top: 7rem;
+    gap: 3rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+      img {
+        min-width: 0;
+        object-fit: contain;
+        width: 60%;
+        height: auto;
+        
+      }
+
+    }
+
+  }
+
+
+  .bloco-1{
+    background-color: var(--primary);
+    z-index: 3;
+  }
+
+  .bloco-2{
+    background-color: var(--secondary);
+    z-index: 2;
+  }
+
+
+}
+
+
+
+
+
+.extra{
+  
+  background-color: var(--third);  
+  gap: 0;
+  margin: -8rem -4rem;
+
+  padding: 1rem 4rem 3rem;
+  z-index: 1;
+
+  h2{
+    font-size: 2rem;
+    color: white;
+    text-decoration: underline;
+    text-decoration-color: var(--secondary);
+    margin: 2rem 0px;
+  }  
+
+  h3{
+    font-size: 1.5rem;
+    color: white;
+    text-decoration: underline;
+    margin: 0px;
+    text-decoration-color: var(--secondary);
+  }
+
+  h4{
+    font-size: 1rem;
+    margin: 0px;
+    color: white;
+
+  }
+
+.linha {
+  background: var(--primary);
+  width: 6px;
+  height: 80%;
+  align-self: center;
+  justify-self: center;
+  border-radius: 5px;
+  box-shadow: 10px 10px 10px rgba(0,0,0,0.2);
+  
+}
+
+.icons {
+  display: grid;
+  grid-auto-flow: column;  
+  justify-content: left;
+  gap: 0.5rem;
+  
+
+  img {
+    width: 55px; /* ocupa a coluna inteira */
+    height: auto;
+  }
+
+}
+
+
+> div{
+  display: grid;
+  grid-template-columns: 1fr 10rem 1fr;
+  justify-items: left;
+    
+  .skill , .vivencia {
+    gap: 2rem;
+  }
+
+  .skill{
+    
+    .tec{
+      display: grid;
+      gap: 3rem 7rem;
+      grid-template-columns: 1fr 1fr;
+      justify-items: left;
+
+      article{
+        display: flex;
+        flex-direction: column;
+        gap: 1.5rem;
+      }
+
+
+    }
+
+
+    .idiomas{
+      display: grid;
+      grid-template-columns: max-content 1fr 2fr;
+      align-items: center;       
+        
+        >h4{
+          
+          background-color: var(--primary);
+          padding: 0.5rem 2rem;
+          color: white;
+          border-radius: 1rem;
+          text-align: center;
+        }
+        
+        >p{
+          color: white;
+          text-align: center;
+
+        }
+
+
+
+        > div {  
+          display: flex;
+          gap: 0.5rem;
+          img {
+            
+          width: 30px;
+          height: auto;
+          filter: brightness(0) invert(1);
+
+          }
+
+        }
+
+
+
+
+    }
+
+
+  }
+}
+
+
+  .vivencia{
+      display: flex;
+      flex-direction: column;
+      justify-content: start;
+
+    article{
+      display: flex;
+      flex-direction: row;
+      gap: 2rem;
+      align-items: center;
+
+      p {
+        color: white;
+      }
+
+      img{
+        
+      width: 10rem; /* ocupa a coluna inteira */
+      height: auto;
+
+      }
+
+
+    }
+  }
+}
+
+
+
+
+
+
+
+footer{
+  width: 100%;
+  height: auto;
+  background-color: var(--primary);
+  z-index: 2;
+  position: relative;
+  box-shadow: 0px -10px 10px rgba(0,0,0,0.3);
+  display: flex;
+  justify-content: space-between;
+  box-sizing: border-box;
+  padding: 3rem;
+}
