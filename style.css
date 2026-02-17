@@ -7,6 +7,27 @@
 }
 
 
+::-webkit-scrollbar {
+    width: 10px; /* largura vertical */
+    height: 10px; /* altura horizontal */
+    background-color: rgba(255, 255, 255, 0);
+    z-index: 0;
+}
+
+/* Fundo da barra */
+::-webkit-scrollbar-track {
+    background: rgba(255, 255, 255, 0);
+    border-radius: 10px;
+    z-index: 0;
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--primary);
+    border-radius: 2px;
+    z-index: 0;
+}
+
+
 body {
   font-family: Bahnschrift, 'DIN Alternate', 'Franklin Gothic Medium', 'Nimbus Sans Narrow', sans-serif-condensed, sans-serif;
   font-weight: normal;
@@ -61,10 +82,11 @@ header {
   width: 100%;
   gap: 0.5rem;
   box-sizing: border-box;
+  z-index: 10;
 }
 
 
-.header-buttons, .header-links{
+.header-buttons, .header-links, a{
   color: white;
   gap: 20px;
   display: flex;
@@ -117,29 +139,14 @@ hr {
 }
 
 
-.resumo div > article {
-  display: flex;
-  flex-direction: column;
-  flex-grow: 1;
-  justify-content: space-evenly;
-  
+.resumo div {
 
-  margin: 0px 20px;
-  padding: 10px 20px;
+  img{
+
+  border-radius: 100%;
 
 
-  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
-  border-radius: 20px;
-  background-color: white;
 }
-
-
-.projetos div {
-
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-  gap:20px;
-
 
 
   > article {
@@ -147,17 +154,44 @@ hr {
     flex-direction: column;
     flex-grow: 1;
     justify-content: space-evenly;
+    
 
-    gap:20px;
-    padding: 20px 20px;
+    margin: 0px 20px;
+    padding: 10px 20px;
 
 
     box-shadow: 0 4px 10px rgba(0,0,0,0.2);
     border-radius: 20px;
     background-color: white;
+
+  }
+}
+
+  .projetos div {
+
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap:20px;
+
+
+
+     article {
+      display: flex;
+      flex-direction: column;
+      flex-grow: 1;
+      justify-content: space-evenly;
+
+      gap:20px;
+      padding: 20px 20px;
+
+
+      box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+      border-radius: 20px;
+      background-color: rgb(255, 255, 255);
+    }
+
   }
 
-}
 
 
 .profissional{
@@ -232,22 +266,31 @@ hr {
     text-decoration-color: var(--secondary);
   }
 
-
+  p {
+    color: white;
+  }
 
     div{
     padding-top: 7rem;
     gap: 3rem;
-    display: flex;
+    display: grid;
     flex-direction: column;
     align-items: center;
-    
+    justify-items: center;
       img {
         min-width: 0;
         object-fit: contain;
-        width: 60%;
+        width: 65%;
         height: auto;
-        
+        filter: brightness(0) invert(1);
       }
+
+      .germinare-foto{
+        object-fit: cover;
+        width: 260px;
+        height: 100%; 
+      }
+
 
     }
 
@@ -418,7 +461,7 @@ hr {
 
       img{
         
-      width: 10rem; /* ocupa a coluna inteira */
+      width: 5rem; 
       height: auto;
 
       }
@@ -444,5 +487,20 @@ footer{
   display: flex;
   justify-content: space-between;
   box-sizing: border-box;
-  padding: 3rem;
+  align-items: end;
+  padding: 2rem;
+
+  section{
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+
+  }
+
+  p {
+    margin: 0px;
+    color: var(--secondary)
+  }
+
 }
