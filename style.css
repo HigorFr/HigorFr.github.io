@@ -68,8 +68,13 @@ body {
 
 }
 
+section {
+  scroll-margin-top: 100px; /* ajuste conforme altura do header */
+}
 
-
+html {
+  scroll-behavior: smooth;
+}
 
 header {
   position: fixed;
@@ -144,7 +149,9 @@ hr {
   img{
 
   border-radius: 100%;
-
+  border: 2px solid #031a2d;
+  width: 200px;
+  height: auto;
 
 }
 
@@ -166,6 +173,7 @@ hr {
 
   }
 }
+
 
   .projetos div {
 
@@ -207,19 +215,24 @@ hr {
      .profissional-texto {
 
       display: flex;
+      align-items: center;
       gap: 1rem;
       
       img {
-        flex: 2;
+        flex: 1;
         height: auto;
         min-width: 0;
         object-fit: contain;
+        width: 200px;
       }
 
       p {
-        flex: 9;
+        flex: 5;
       }
     }
+
+
+      
 
       .profissional-titulo {
         display: flex;
@@ -488,7 +501,7 @@ footer{
   justify-content: space-between;
   box-sizing: border-box;
   align-items: end;
-  padding: 2rem;
+  padding: 3rem 1rem 1rem;
 
   section{
     
