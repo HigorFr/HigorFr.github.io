@@ -57,42 +57,103 @@ Graduando em Sistemas de Informação pela Universidade de São Paulo (USP), com
 
     <hr>
 
+
+
+
+
+
     <section  id="projetos" class="projetos">
       <h2> Projetos </h2>
 
-      <div>
+      <div class="carrosel">
 
-        <article>
-          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQsXWgGDYHAb1g8FDwx_KfAzo01FBKxHF0CBg&s" alt="descrição da imagem">
-          <h3>Network Application Platform</h3>
-          <p>
-Desenvolvimento de aplicação de rede com suporte a comunicação TCP, UDP, arquitetura cliente-servidor e modelo P2P. Implementação de criptografia e gerenciamento de filas para controle eficiente do tráfego de mensagens.
-          </p>
-        </article>
+        <button class="prev">&#10094;</button>
 
-        <article>
-          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQsXWgGDYHAb1g8FDwx_KfAzo01FBKxHF0CBg&s" alt="descrição da imagem">
-          <h3>Análise de Escalonadores de Processos</h3>
-          <p>
-Projeto acadêmico voltado à análise comparativa de algoritmos de escalonamento utilizados em sistemas operacionais, avaliando métricas como tempo de espera, throughput e desempenho geral.
-          </p>
-        </article>
+        <div class="track">
 
-        <article>
-          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQsXWgGDYHAb1g8FDwx_KfAzo01FBKxHF0CBg&s" alt="descrição da imagem">
-          <h3>Otimização de Threads e Concorrência</h3>
-          <p>
-Estudo experimental sobre otimização de execução concorrente utilizando múltiplas threads e análise do impacto de diferentes estratégias de sincronização no desempenho computacional.
-          </p>
-        </article>
 
-        <article>
-          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQsXWgGDYHAb1g8FDwx_KfAzo01FBKxHF0CBg&s" alt="descrição da imagem">
-          <h3>Automação e Integração de Dados Corporativos</h3>
-          <p>
-Desenvolvimento de soluções utilizando Python e SQL para integração e automação de fluxos de dados empresariais, com foco na melhoria da eficiência operacional e confiabilidade das informações.
-          </p>
-        </article>
+          <article>
+            <img src="assets/Gan.png" width="100" alt="Autenticação Biométrica com Redes Neurais Convolucionais e GANs">
+            <h3>Identificação Biométrica com GAN Convolucionais </h3>
+            <p>
+              Sistema de identificação biométrica combinando Redes Neurais Convolucionais (CNN) com Generative Adversarial Networks (GAN) para robustez contra variações de entrada e generalização de padrões faciais. Pipeline completo de treinamento, geração de dados e avaliação de desempenho.
+            </p>
+          </article>          
+
+
+          <article>
+            <img src="assets/pokemon.png" alt="Aplicação de Rede Pokémon">
+            <h3>Network Pokémon Game (Cliente-Servidor)</h3>
+            <p>
+            Desenvolvimento de aplicação distribuída inspirada em batalhas Pokémon, utilizando arquitetura cliente-servidor com comunicação TCP/UDP. Implementação de controle de estado, gerenciamento de conexões simultâneas e sincronização de eventos em ambiente concorrente.
+            </p>
+          </article>
+
+
+          <article>
+            <img src="assets/aura.png" alt="Sistema Imobiliário Full Stack">
+            <h3>Sistema Imobiliário (Full Stack)</h3>
+            <p>
+            Sistema completo de gerenciamento imobiliário com frontend em Flutter, backend em Python e banco de dados PostgreSQL. Implementação de modelagem relacional, APIs REST e controle de operações CRUD com foco em integridade e escalabilidade.
+            </p>
+          </article>
+          <article>
+            <img src="assets/rede_neural.png" alt="Autenticação Biométrica com Redes Neurais">
+            <h3>Autenticação Biométrica com redes neurais</h3>
+            <p>
+            Implementação de rede neural para autenticação biométrica utilizando dataset CelebA. Construção do pipeline de pré-processamento do zero, treinamento supervisionado, ajuste de hiperparâmetros e avaliação com métricas de acurácia e perda. Sem uso de biliotecas.
+            </p>
+          </article>
+
+          <article>
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRQ3pb0HtTy71XQ5pzzaW63VA829GZ7Ln1t6A&s" alt="W1 Holdings Hackathon">
+            <h3>W1 Holdings - Aplicação Web</h3>
+            <p>
+            Desenvolvimento de aplicação web full-stack durante hackathon corporativo, incluindo definição de requisitos, prototipação rápida e implementação de funcionalidades sob restrição de tempo, priorizando entrega incremental e validação funcional.
+            </p>
+          </article>
+
+          <article>
+            <img src="https://via.placeholder.com/150" alt="Space Invaders em Java">
+            <h3>Java Space Invaders</h3>
+            <p>
+            Recriação do clássico Space Invaders utilizando Java e Programação Orientada a Objetos. Implementação de loop de jogo, tratamento de colisões, controle de sprites e organização modular de classes seguindo princípios de encapsulamento e coesão.
+            </p>
+          </article>          
+
+          <article>
+            <img src="https://via.placeholder.com/150" alt="Análise de escalonadores de processos">
+            <h3>Análise escalonador de processos</h3>
+            <p>
+              Projeto de análise comparativa de escalonadores de processos clássicos (FCFS, SJF, Round Robin, etc.), medindo métricas como tempo médio de espera, turnaround e utilização de CPU. Implementação de simulações e geração de relatórios analíticos.
+            </p>
+          </article>
+
+          <article>
+            <img src="https://www.nasa.gov/wp-content/uploads/2021/07/space_apps_003.png" width="200" alt="Hackathon NASA Kepler">
+            <h3>NASA Kepler AI</h3>
+            <p>
+            Desenvolvimento de solução em Machine Learning para classificação de objetos astronômicos com base em dados do telescópio Kepler. Aplicação de modelos como Random Forest e LightGBM, análise de métricas de desempenho e validação cruzada.
+            </p>
+          </article>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        </div>
+
+        <button class="next">&#10095;</button>
 
       </div>
     </section>
@@ -152,6 +213,7 @@ Atuação no suporte operacional e administrativo da unidade, com gestão de equ
       <div class="bloco-1">
         <h2>Acadêmico</h2> 
         <div>
+          <h4>2024 - 2028*</h4>
           <img src="https://scs.usp.br/identidadevisual/wp-content/uploads/2022/08/usp-logo-png-1.png" alt="descrição da imagem">
           <p>
 Bacharelado em Sistemas de Informação pela Universidade de São Paulo (USP), com formação voltada para computação, engenharia de software, análise de dados e inteligência artificial. Participação em projetos acadêmicos envolvendo concorrência, redes e otimização computacional.
@@ -161,6 +223,7 @@ Bacharelado em Sistemas de Informação pela Universidade de São Paulo (USP), c
 
       <div class="bloco-2">
         <div>
+          <h4>2020 - 2022</h4>
           <img  class= germinare-foto src="https://play-lh.googleusercontent.com/ojWOTCR1sg-CPRjVwwMZiH5IHfP_vbroAbTiXjzSwDC-uENlgiStdRd3n3fLiELJlnA=w600-h300-pc0xffffff-pd"  alt="descrição da imagem">
           <p>
 Ensino Médio Técnico em Administração pelo Instituto J&F, com formação integrada ao ambiente corporativo e desenvolvimento de projetos práticos voltados à gestão empresarial e tecnologia.
@@ -178,35 +241,35 @@ Ensino Médio Técnico em Administração pelo Instituto J&F, com formação int
 
         <section class="vivencia">
           <h3>Vivências</h3>
-
+<!---
           <article>
             <img src="https://petsi.each.usp.br/wp-content/uploads/2023/02/BXCOMP-1-1-1024x225.png" alt="bxc">
-            <p>6º colocado no Campeonato de Programação BXCOMP 2024 (USP).</p>
+            <p>6º colocado no Campeonato de anual Programação BXCOMP 2024 (USP).</p>
           </article>
-
+-->
           <article>
             <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTTJ7yvSx8qxXcMWBoQAXraup5z28N8LnCrkQ&s" alt="hype">
-            <p>Participação no grupo de extensão HYPE com atividades de estudo e desenvolvimento em Inteligência Artificial.</p>
+            <p>Participação no grupo de extensão HYPE, da USP, com atividades de estudo e desenvolvimento em Inteligência Artificial.</p>
           </article>
 
           <article>
             <img src="https://logopng.com.br/logos/google-37.png" alt="hype">
-            <p>Realização de visitas técnicas a instituições de referência no setor tecnológico, como Google, Banco Original e Qlik, com foco na ampliação do conhecimento sobre processos de desenvolvimento tecnológico e práticas de inovação.</p>
+            <p>Realização de visitas técnicas a instituições de referência no setor tecnológico, como Google, Banco Original e Qlik, com foco na ampliação do conhecimento sobre processos de desenvolvimento tecnológico e práticas de inovação na prática.</p>
           </article>
 
           <article>
             <img src="https://media.licdn.com/dms/image/v2/D4D0BAQHnL9Ud8RZSPw/company-logo_200_200/B4DZvsHHkhJMAM-/0/1769192848019/aspire_leaders_brasil_logo?e=2147483647&v=beta&t=H6pSsOhkMtcRa6EAuDmRGTBAkJHhL25riPu2RFz9DP4" alt="hype">
-            <p>Participação no programa Aspire Leaders, iniciativa do Aspire Institute em parceria com a Harvard University, com foco no desenvolvimento de liderança, formação profissional e visão global.</p>
+            <p>Participação no programa Aspire Leaders, iniciativa do Aspire Institute em parceria com a Universidade de Harvard, com foco no desenvolvimento de liderança, formação profissional e formação de networking.</p>
           </article>
 
           <article>
-            <img src="https://logopng.com.br/logos/google-37.png" alt="hype">
-            <p>Realização de visitas técnicas a instituições de referência no setor tecnológico, como Google, Banco Original e Qlik, com foco na ampliação do conhecimento sobre processos de desenvolvimento tecnológico e práticas de inovação.</p>
+            <img src="https://images.seeklogo.com/logo-png/42/2/scrum-logo-png_seeklogo-428358.png" alt="hype">
+            <p>Aplicação de metodologias ágeis e tradicionais de gestão de projetos, com domínio dos frameworks Scrum e das boas práticas consolidadas no PMBOK, voltadas ao planejamento, execução, monitoramento de iniciativas tecnológicas.</p>
           </article>
 
           <article>
-            <img src="https://logopng.com.br/logos/google-37.png" alt="hype">
-            <p>Realização de visitas técnicas a instituições de referência no setor tecnológico, como Google, Banco Original e Qlik, com foco na ampliação do conhecimento sobre processos de desenvolvimento tecnológico e práticas de inovação.</p>
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0c/Blender_logo_no_text.svg/960px-Blender_logo_no_text.svg.png" alt="hype">
+            <p>Utilização de ferramentas e softwares utilitários diversos, como Blender e Photoshop para criação e edição gráfica, além do domínio do Pacote Office para organização e análise de informações, e ambientes de desenvolvimento como VS Code e plataformas JetBrains para desenvolvimento de software.</p>
           </article>
 
 
@@ -225,6 +288,7 @@ Ensino Médio Técnico em Administração pelo Instituto J&F, com formação int
                 <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" width="42" alt="Python" />
                 <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" width="42" alt="Java" />
                 <img src="https://devicon-website.vercel.app/api/c/original.svg" alt="C" />
+                <img src="https://user-images.githubusercontent.com/103866722/194773833-8571f323-4fa8-4036-a51c-57b9d29c683b.svg" alt="C" />
               </div>
             </article>
 
@@ -251,6 +315,9 @@ Ensino Médio Técnico em Administração pelo Instituto J&F, com formação int
                 <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" width="42" alt="Git" />
                 <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linux/linux-original.svg" width="42" alt="Linux" />
                 <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jupyter/jupyter-original.svg" width="42" alt="Jupyter" />
+                <img src="https://assets.streamlinehq.com/image/private/w_300,h_300,ar_1/f_auto/v1/icons/text-formatting/regular-expression-fibv7z3fa21w41fsttp6t.png/regular-expression-dzgjpz3g6pibng3rka33ww.png?_a=DATAiZAAZAA0" width="42" alt="Jupyter" />
+
+
               </div>
             </article>     
           </section>
@@ -308,7 +375,7 @@ Ensino Médio Técnico em Administração pelo Instituto J&F, com formação int
   <footer>
     
     <section>  
-      <p>Site interiamente feito por mim, sem nenhum auxílio de IA </p>
+      <p>Site interiamente desenvolvido por mim, sem nenhum auxílio de IA </p>
       <p>Contato: higor.gdfreitas@gmail.com </p>
     </section>
 
@@ -319,5 +386,6 @@ Ensino Médio Técnico em Administração pelo Instituto J&F, com formação int
 
   </footer>
 
+<script src="script.js"></script>
 </body>
 </html>

@@ -174,32 +174,71 @@ hr {
 }
 
 
-  .projetos div {
-
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-    gap:20px;
+.projetos{ 
 
 
+  .carrosel {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    gap: 3rem;
+    padding: 0.5rem;
+  }
 
-     article {
+  .track {
+    --items: 4;
+    --gap: 20px;
+    display: flex;
+    transition: transform 0.4s ease-in-out;
+    gap: var(--gap);
+
+    article {
+      flex: 0 0 calc((100% - (var(--items) - 1) * var(--gap)) / var(--items));
+      box-sizing: border-box;
+      
       display: flex;
       flex-direction: column;
-      flex-grow: 1;
-      justify-content: space-evenly;
-
-      gap:20px;
-      padding: 20px 20px;
-
+      gap: 20px;
+      padding: 16px;
 
       box-shadow: 0 4px 10px rgba(0,0,0,0.2);
       border-radius: 20px;
-      background-color: rgb(255, 255, 255);
+      background-color: white;
     }
+
+    img{
+    width: 100%;
+    height: 300px;        
+    object-fit:contain;    
+    border-radius: 12px;
+    }
+
+    h3 {
+      font-size: 1.5rem;
+    }
+
 
   }
 
+  button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: #031a2d;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    border-radius: 50%;
+    z-index: 1;
+  }
 
+  .prev { left: 10px; }
+  .next { right: 10px; }
+
+
+
+}
 
 .profissional{
   display: flex;
@@ -266,7 +305,7 @@ hr {
   .bloco-1, .bloco-2{
     display: grid;
     
-    grid-template-rows: subgrid;
+    grid-template-columns: subgrid;
     box-shadow: 10px 10px 10px rgba(0,0,0,0.2);
     padding: 2rem 5rem 3rem;
 
@@ -284,8 +323,9 @@ hr {
 
     div{
     padding-top: 7rem;
-    gap: 3rem;
+    gap: 2rem;
     display: grid;
+    
     flex-direction: column;
     align-items: center;
     justify-items: center;
@@ -297,10 +337,10 @@ hr {
         filter: brightness(0) invert(1);
       }
 
-      .germinare-foto{
-        object-fit: cover;
-        width: 260px;
-        height: 100%; 
+      h4 {
+        padding: 1rem;
+        background-color: white;
+        border-radius: 2rem;
       }
 
 
@@ -449,6 +489,8 @@ hr {
 
 
 
+
+
     }
 
 
@@ -512,6 +554,7 @@ footer{
 
   p {
     margin: 0px;
+    font-size: small;
     color: var(--secondary)
   }
 
