@@ -92,12 +92,35 @@ header {
 
 
 .header-buttons, .header-links, a{
+
+
   color: white;
   gap: 20px;
   display: flex;
   align-items: center;
-  
+  padding: 0.5rem 1rem;;
+  text-decoration: none;
+
 }
+
+
+
+.header-buttons{
+  height: 100%;
+  
+  :hover {
+    background-color: var(--third);
+    border-radius: 20px;
+    color: white;
+  }
+
+  z-index: 10;
+  box-shadow: 0px 4px 10px rgba(0,0,0,0.2);
+
+  
+
+}
+
 
 
 
@@ -166,7 +189,7 @@ hr {
     padding: 10px 20px;
 
 
-    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    box-shadow: 0 4px 10px rgba(255, 255, 255, 0.2);
     border-radius: 20px;
     background-color: white;
 
@@ -209,17 +232,28 @@ hr {
     img{
     width: 100%;
     height: 300px;        
-    object-fit:contain;    
-    border-radius: 12px;
+    object-fit: contain; 
     }
 
     h3 {
       font-size: 1.5rem;
     }
-
-
   }
 
+  .saiba-mais {
+
+    align-self: end;
+    p{
+      background-color: var(--primary);
+      padding: 1rem 1rem;
+      color: white;
+      border-radius: 20px;
+      font-weight: bold;
+        
+    }
+
+  }
+  
   button {
     position: absolute;
     top: 50%;
@@ -235,8 +269,6 @@ hr {
 
   .prev { left: 10px; }
   .next { right: 10px; }
-
-
 
 }
 
@@ -264,6 +296,8 @@ hr {
         width: 200px;
       }
 
+
+
       p {
         flex: 5;
       }
@@ -281,7 +315,7 @@ hr {
           background-color: var(--primary);
           border-radius: 20PX;
           color: white;
-          padding: 0.7rem;
+          padding: 0.5rem 2rem;
 
         }
 
@@ -338,7 +372,7 @@ hr {
       }
 
       h4 {
-        padding: 1rem;
+        padding: 1rem 3rem;
         background-color: white;
         border-radius: 2rem;
       }
