@@ -3,7 +3,7 @@ const next = document.querySelector(".next");
 const prev = document.querySelector(".prev");
 
 let index = 0;
-const totalSlides = document.querySelectorAll(".track article").length/3;
+const totalSlides = document.querySelectorAll(".track article").length/4;
 
 function updateCarousel() {
   track.style.transform = `translateX(-${index * 100}%)`;
